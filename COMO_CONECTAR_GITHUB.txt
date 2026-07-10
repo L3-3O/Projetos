@@ -1,0 +1,51 @@
+==========================================================================
+* GUIA RAPIDO: COMO CONECTAR SEU VS CODE PORTATIL AO GITHUB
+==========================================================================
+
+Como voce esta usando um VS Code Portatil no Pendrive, todas as suas
+configuracoes, extensoes e tokens de acesso ficam salvos de forma segura 
+dentro do seu pendrive. Nenhuma credencial fica salva no PC do laboratorio!
+
+Siga os passos abaixo para conectar e salvar seus codigos:
+
+--------------------------------------------------------------------------
+PASSO 1: Identificar seu Git (Apenas uma vez no terminal do VS Code)
+--------------------------------------------------------------------------
+Abra o terminal do VS Code (Atalho: Ctrl + ') e configure sua identidade:
+
+   git config --global user.name "Seu Nome Completo"
+   git config --global user.email "seu-email-do-github@email.com"
+
+--------------------------------------------------------------------------
+PASSO 2: Autenticar com o GitHub pelo VS Code
+--------------------------------------------------------------------------
+O VS Code cuida da autentica??o de forma automatica e segura:
+1. No canto inferior esquerdo, clique no ?cone de "Contas" (bonequinho).
+2. Escolha "Sign in with GitHub" (Entrar com GitHub).
+3. O navegador do PC abrira. Fa?a login na sua conta do GitHub e autorize.
+4. O VS Code Portatil guardara esse token de acesso na pasta "data" do
+   seu pendrive. Ao desplug?-lo, o PC do laboratorio nao tera acesso a nada.
+
+--------------------------------------------------------------------------
+PASSO 3: Enviando seu Projeto Local para o GitHub
+--------------------------------------------------------------------------
+Se voce criou um projeto na pasta "Projetos" e quer enviar para a nuvem:
+
+1. No terminal do VS Code, inicialize o repositorio local:
+   git init
+
+2. Va em github.com, crie um repositorio NOVO e vazio (nao marque README).
+
+3. Copie a URL do repositorio (ex: https://github.com/seu-usuario/projeto.git).
+
+4. Vincule a pasta local ao link copiado (substitua o link abaixo):
+   git remote add origin https://github.com/seu-usuario/projeto.git
+
+5. Salve e envie seus arquivos:
+   git add .
+   git commit -m "Meu primeiro commit"
+   git branch -M main
+   git push -u origin main
+
+* Bons estudos! Seus codigos agora estao salvos na nuvem e no seu pendrive.
+==========================================================================
