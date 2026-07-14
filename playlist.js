@@ -66,7 +66,7 @@ const playlistDetalhada = [
           duracao: "3:57",
            curtida: false
          },
-    { titulo: "Location",
+    { titulo: "Location",  
          artista: "Playboi Carti",
           duracao: "2:37",
            curtida: true 
